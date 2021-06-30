@@ -1,0 +1,133 @@
+/* Smartphones */
+@media (min-width: 319px) and (max-width:689px){
+
+    .navigation {
+      -webkit-transition: left 0.5s ease;
+      -moz-transition: left 0.5s ease;
+      -ms-transition: left 0.5s ease;
+      -o-transition: left 0.5s ease;
+      transition: left 0.5s ease;
+      background: black;
+      color: white;
+      font-size: 2rem;
+      height: 100vh;
+      left: -30rem;
+      padding: 5rem 2rem 2rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 20rem;
+      z-index: 1;
+    }
+      
+    .navigation.expanded { 
+      left: -3rem;
+      width: 100%; 
+    }
+    
+    .navigation ul {
+      position: absolute;
+      top: 25%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      visibility: inherit;
+    }
+
+    .navigation .logo {
+      display: none;
+    }
+
+    .nav-responsive {
+      width: 100%;
+      height: 4rem;
+      padding-bottom: 4.3rem;
+      background-color: black;
+      border-bottom: 2px solid #fff;
+      content: '';
+      position: fixed;
+      z-index: 3;
+      background-image: url(/Users/alexma/Sites/projets/room-homepage-master/images/logo.svg);
+      background-repeat: no-repeat;
+      background-position-x: 90%;
+      background-position-y: 50%;
+    }
+
+    .nav-toggle {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        height: 1.8rem;
+        width: 2.4rem;
+        left: 2rem;
+        position: fixed;
+        top: 1.1rem;
+        z-index: 2;
+      }
+      
+      .nav-toggle:hover { opacity: 0.8; }
+      
+      .nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        background: #fff;
+        content: '';
+        height: 0.4rem;
+        width: 100%;
+      }
+      
+      .nav-toggle .nav-toggle-bar { margin-top: 0; }
+      
+      .nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
+      
+      .nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
+      
+      .nav-toggle.expanded .nav-toggle-bar { background: transparent;         z-index: 2;
+      }
+      
+      .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+        background: white;
+        margin-top: 0;
+      }
+      
+      .nav-toggle.expanded .nav-toggle-bar::after {
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 2;
+
+      }
+      
+      .nav-toggle.expanded .nav-toggle-bar::before {
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        z-index: 2;
+
+      }
+
+
+
+    .navlist {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 1rem 0 0 0;
+        padding: 0.5rem 0 ;
+        font-size: 1.5rem;
+    }
+
+
+}

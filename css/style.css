@@ -1,0 +1,176 @@
+body {
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+}
+
+/* NAVIGATION ======================== */
+.navigation {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 2rem 3rem;
+}
+
+.logo {
+    background-image: url(/Users/alexma/Sites/projets/room-homepage-master/images/logo.svg);
+    width: 20%;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navlist {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-left: 3rem;
+}
+
+.navlist-item {
+    padding: 1rem;
+}.navlist-item:hover {
+    padding-bottom: 0.5rem;
+    border-bottom: solid 4px #fff;
+}
+
+/* UPPER PART ======================== */
+main{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.illustration {
+    display: flex;
+    width: 55%;
+}
+
+.illustration-slider {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.illustration-slider.active {
+    display: block;
+}
+
+/* TEXT CONTENT */
+.illustration-caption {
+    width: 45%;
+    background-color: #fff;
+    padding: 6rem;
+}
+
+.illustration-content {
+    display: none;
+}
+
+.illustration-content.active{
+    display: block;
+}
+
+.illustration-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 2rem;
+}
+
+.illustration-description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.illustration-link {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+.illustration-link:hover{
+    color: hsl(0, 0%, 63%);
+}
+
+svg path:hover {
+    fill: hsl(0, 0%, 63%);
+}
+
+
+/* SLIDER PART */
+
+.slider-rotation {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left:55%;
+}
+
+.slider-left{
+    height: 6rem;
+    width: 6rem;
+    background-color: #000;
+    color: #fff;
+    background-image: url(/Users/alexma/Sites/projets/room-homepage-master/images/icon-angle-left.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}.slider-left:hover{
+    background-color: hsl(0, 0%, 27%);
+}
+
+.slider-right{
+    height: 6rem;
+    width: 6rem;
+    background-color: #000;
+    color: #fff;
+    background-image: url(/Users/alexma/Sites/projets/room-homepage-master/images/icon-angle-right.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}.slider-right:hover{
+    background-color: hsl(0, 0%, 27%);
+}
+
+
+/* LOWER PART ======================== */
+footer {
+    display: flex;
+    margin: none;
+}
+.footer-img {
+    width: 100%;
+}
+.footer-about {
+    width: 100%;
+    padding: 5rem;
+}
+
+.footer-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+}
